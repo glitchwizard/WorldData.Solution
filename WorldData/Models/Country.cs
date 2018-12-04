@@ -13,6 +13,11 @@ namespace WorldData.Models
     public int CountryPopulation {get;set;}
     public string CountryGovForm {get;set;}
 
+    public Country()
+    {
+
+    }
+
     public Country (string CountryCode, string CountryName, string CountryContinent, string CountryRegion, int CountryPopulation, string CountryGovForm)
     {
       this.CountryCode = CountryCode;

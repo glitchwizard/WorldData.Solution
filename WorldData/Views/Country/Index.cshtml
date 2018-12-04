@@ -1,15 +1,22 @@
 @using WorldData.Models;
 <h1>Countries</h1>
-<ul>
 
+
+
+<ul>
     @foreach (Country country in Model)
     {
-      <li><a href='/Countries/'>@country.CountryName</a></li>
+      <li><a href='/Countries/@country.CountryCode' id="@country.CountryCode">@country.CountryName</a></li>
     }
   }
 </ul>
 
-@* <a href="/categories/new">Add a Category</a>
+
+
+@*
+ABW
+
+<a href="/categories/new">Add a Category</a>
 <a href="/items/new">Add a new item.</a>
 
 <form action="/items/delete" method="post">
